@@ -9,11 +9,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'devise', '~> 4.3'
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'database_cleaner'
 end
