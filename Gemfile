@@ -12,7 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem "gritter", "1.2.0"
-gem 'administrate', '~> 0.0.2'
+gem "administrate", "~> 0.2.2"
 gem 'bourbon', '~> 4.3', '>= 4.3.4'
 
 group :development, :test do
