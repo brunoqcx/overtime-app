@@ -1,6 +1,9 @@
 class Post < ActiveRecord::Base
   belongs_to :user
+
   validates_presence_of :date, :rationale
+
+  validates :overtime_request, numericality: { greater_than: 0.0 }
 
   enum status: { submitted: 0, approved: 1, rejected: 2 }
 
