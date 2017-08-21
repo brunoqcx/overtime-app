@@ -5,8 +5,10 @@ class AuditLog < ActiveRecord::Base
 
   after_initialize :set_dafaults
 
+  enum status: { pending: 0, confirmed: 1 }
+
   private
     def set_dafaults
-      self.start_date ||= (Date.today - 6.days) 
+      self.start_date ||= (Date.today - 6.days)
     end
 end
