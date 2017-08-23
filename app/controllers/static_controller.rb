@@ -1,6 +1,6 @@
 class StaticController < ApplicationController
 
   def homepage
-
-  end  
+    @pending_approvals = Post.where(status: 'submitted')
+  end
 end
