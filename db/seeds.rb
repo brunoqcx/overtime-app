@@ -17,8 +17,10 @@ AdminUser.create(   email: 'admin@test.com',
 end
 p '100 posts created'
 
-100.times do |audit_log|
+
   AuditLog.create(user: user, status: 0, start_date:(Date.today - 6.days))
-end
+  AuditLog.create(user: user, status: 0, start_date:(Date.today - 13.days))
+  AuditLog.create(user: user, status: 0, start_date:(Date.today - 20.days))
+
 
 p '100 audit_logs created'
