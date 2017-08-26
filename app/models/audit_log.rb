@@ -3,12 +3,12 @@ class AuditLog < ActiveRecord::Base
 
   validates_presence_of :user_id, :status, :start_date
 
-  after_initialize :set_dafaults
+  after_initialize :set_defaults
 
   enum status: { pending: 0, confirmed: 1 }
 
   private
-    def set_dafaults
+    def set_defaults
       self.start_date ||= (Date.today - 6.days)
     end
 end
