@@ -1,4 +1,4 @@
-user = User.create( email: 'test@test.com',
+user = Employee.create( email: 'test@test.com',
                     password: 'asdfasdf',
                     password_confirmation: 'asdfasdf',
                     first_name: 'bruno',
